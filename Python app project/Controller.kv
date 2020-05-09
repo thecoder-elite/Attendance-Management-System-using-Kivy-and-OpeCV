@@ -1,0 +1,146 @@
+#:kivy 1.11.1
+<LoginScreen>: # widgets for the UI class in LoginScreen
+    name:"loginScreen"
+    FloatLayout:
+        size: 700,600
+        Label:
+            id:'unameLabel'
+            text:'Enter Username : '
+            pos_hint:{'top': 0.9,'right': 0.3}
+            size_hint : 0.05,0.05
+            font_size : 25
+        TextInput:
+            id:'uname'
+            size_hint: (None, None)
+            height:50
+            width:400
+            pos_hint:{'top': 0.92,'right': 0.9}
+            font_size : 25
+            multiline:False
+        Label:
+            id:'passwordLabel'
+            text:'Enter password : '
+            pos_hint:{'top': 0.7,'right': 0.3}
+            size_hint : 0.05,0.05
+            font_size : 25
+        TextInput:
+            id:'password'
+            size_hint: (None, None)
+            height:50
+            width:400
+            pos_hint:{'top': 0.72,'right':0.9}
+            font_size : 25
+            password: True
+            multiline:False
+        CheckBox:
+            id:'teacher'
+            pos_hint:{'top': 0.5,'right': 0.2}
+            size_hint : 0.05,0.05
+            group:True
+        Label:
+            id:'teacherRadioButton'
+            text:'Teacher'
+            pos_hint:{'top': 0.5,'right': 0.3}
+            size_hint : 0.05,0.05
+            font_size : 25
+        CheckBox:
+            id:'student'
+            pos_hint:{'top': 0.4,'right': 0.2}
+            size_hint : 0.05,0.05
+            group:True
+            active:True
+        Label:
+            id:'studentRadioButton'
+            text:'Student'
+            pos_hint:{'top': 0.4,'right': 0.3}
+            size_hint : 0.05,0.05
+            font_size : 25
+        Button:
+            id: 'signIn'
+            text:'Sign In'
+            pos_hint:{'top': 0.2,'right': 0.3}
+            size_hint : 0.15,0.1
+            on_press: self.parent.parent.signIn()
+        Button:
+            id: 'exit'
+            text:'Exit'
+            pos_hint:{'top': 0.2,'right': 0.6}
+            size_hint : 0.15,0.1
+            on_press: self.parent.parent.Exit()
+<StudentScreen>:    # widgets for the UI class in StudentScreen
+    name:"studentScreen"
+    FloatLayout:
+        size: 700,600
+        Label:
+            id:'studentWelcomeLabel'
+            text:'Hello'
+            pos_hint:{'top': 0.95,'right': 0.15}
+            size_hint : 0.05,0.05
+            font_size : 25
+        Button:
+            id: 'logOut'
+            text:'Log Out'
+            pos_hint:{'top': 0.97,'right': 0.95}
+            size_hint : 0.15,0.095
+            on_release: self.parent.parent.LogOutStudent() 
+        Label:
+            id:'status'
+            text:'Error Marking Your Attendance'
+            pos_hint:{'top': 0.5,'right': 0.5}
+            size_hint : 0.05,0.05
+            font_size : 25
+<TeacherScreen>:    # widgets for the UI class in TeacherScreen
+    name:"teacherScreen"
+    FloatLayout:
+        size: 700,600
+        Label:
+            id:'teacherWelcomeLabel'
+            text:'Hello'
+            pos_hint:{'top': 0.95,'right': 0.15}
+            size_hint : 0.05,0.05
+            font_size : 25
+        Button:
+            id: 'logOut'
+            text:'Log Out'
+            pos_hint:{'top': 0.97,'right': 0.95}
+            size_hint : 0.15,0.095
+            on_release: self.parent.parent.LogOutTeacher() 
+        Label:
+            id:'divLabel'
+            text:'Enter div : '
+            pos_hint:{'top': 0.75,'right': 0.3}
+            size_hint : 0.05,0.05
+            font_size : 25
+        TextInput:
+            id:'div'
+            size_hint: (None, None)
+            height:50
+            width:115
+            pos_hint:{'top': 0.77,'right': 0.55}
+            font_size : 25
+            multiline:False
+        Label:
+            id:'subjectLabel'
+            text:'Select Subject : '
+            pos_hint:{'top': 0.55,'right': 0.31}
+            size_hint : 0.05,0.05
+            font_size : 25
+        TextInput:
+            id:'subject'
+            size_hint: (None, None)
+            height:50
+            width:115
+            pos_hint:{'top': 0.55,'right': 0.55}
+            font_size : 25
+            multiline:False
+        Button:
+            id: 'logAttendance'
+            text:'Log Attendance'
+            pos_hint:{'top': 0.3,'right': 0.5}
+            size_hint : 0.15,0.095
+            on_release: self.parent.parent.LogAttendance() 
+        Label:
+            id:'success'
+            text:''
+            pos_hint:{'top': 0.1,'right': 0.5}
+            size_hint : 0.15,0.095
