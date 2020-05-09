@@ -18,13 +18,15 @@ How to use the app:
 
 
 Project Details:
-  Python 3.7.4
-  Kivy 1.11.1
-  Anaconda 1.7.2
-  OpenCV 4.2.0
-  numpy 1.18.1
-  Pillow
+  1. Python 3.7.4
+  2. Kivy 1.11.1
+  3. Anaconda 1.7.2
+  4. OpenCV 4.2.0
+  5. numpy 1.18.1
+  6. Pillow
   
 For any Help Check Out the references I used:
 1.  https://www.youtube.com/watch?v=iluST-V757A&list=PLEsfXFp6DpzRyxnU-vfs3vk-61Wpt7bOS
 2.  https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/
+
+
