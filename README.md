@@ -12,7 +12,7 @@ Process Flow:
 How to use the app:
 1. take multiple images of a student and name them in order 1.jpg to n.jpg 
 2. store these images in a folder named as the student's name
-3. move these folder into images folder in the project
+3. move these folder into a folder named "images" in the project
 4. then run the faces-trained.py file 
 5. finally run the main.py file to access the app
 
