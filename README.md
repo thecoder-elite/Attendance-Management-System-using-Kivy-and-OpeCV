@@ -24,8 +24,8 @@ This is a very basic implementation and can be used to extend the app in any des
   4. OpenCV 4.2.0
   5. numpy 1.18.1
   6. Pillow
-  
-For any Help Check Out the references I used:
+
+### For any Help Check Out the references I used:
 1.  https://www.youtube.com/watch?v=iluST-V757A&list=PLEsfXFp6DpzRyxnU-vfs3vk-61Wpt7bOS
 2.  https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/
 
