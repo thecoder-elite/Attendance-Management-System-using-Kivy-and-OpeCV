@@ -4,12 +4,12 @@ This is an app I made using the Kivy Framework and openCV library for python.
 This can be used to manage the attendance for a given class using facial data of students.
 This is a very basic implementation and can be used to extend the app in any desirable direction.
 
-Process Flow:
+## Process Flow:
 1. Either student or the teacher can login.
 2. if student log's in they can mark their attendance by scanning their face using device's camera
    if teacher log's in they have the option to select the desired subject,class, and other details and finally create a lecture slot
 
-How to use the app:
+## How to use the app:
 1. take multiple images of a student and name them in order 1.jpg to n.jpg 
 2. store these images in a folder named as the student's name
 3. move these folder into a folder named "images" in the project
@@ -17,7 +17,7 @@ How to use the app:
 5. finally run the main.py file to access the app
 
 
-Project Details:
+## Project Details:
   1. Python 3.7.4
   2. Kivy 1.11.1
   3. Anaconda 1.7.2
